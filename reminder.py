@@ -29,7 +29,7 @@ def get_birthdays_per_week(birhtsday_list):
     for name, date in birhtsday_list.items():  
 
         date= date.replace(year=current_datetime.isocalendar()[0]) #Приводим год к нынешнему
-        #print(date)
+        
 
         if start_week <= date <= end_week:
             
@@ -61,7 +61,7 @@ def get_birthdays_per_week(birhtsday_list):
             if l_birthsdays[day]:
                 print(f"{day}:{','.join(l_birthsdays[day])}")
     #------------------------------
-    print(birthsdays)
+    
     return 
 
 
